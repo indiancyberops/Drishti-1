@@ -27,3 +27,75 @@
 <a href="#"><img title="Watching" src="https://img.shields.io/github/watchers/7ORP3DO/Drishti?label=Watchers&color=blue&style=flat-square"></a>
 <a href="#"><img title="Licence" src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
 </p>
+
+
+
+<br>
+
+
+## ABOUT TOOL :
+
+Drishti is an information collection tool (OSINT) which aims to carry out Basic Information. It provides various modules that allow efficient searches. Drishti does not require an API key or login ID.
+
+
+## AVAILABLE ON :
+
+* Termux
+* Windows
+* Linux
+
+### TESTED ON :
+
+* Termux
+* Windows 10 (Powershell)
+* Kali Linux
+
+### REQUIREMENTS :
+* Internet 20 MB
+* Storage 50 MB
+
+
+## FEATURES :
+* [+] Unlimited usage !
+* [+] Updated maintainence !
+* [+] Easy for Beginners !
+* [+] Instagram Lookup
+* [+] IP Lookup
+* [+] DNS Lookup
+* [+] Port Scan
+* [+] Address Lookup
+* [+] Decrypt Hash
+
+
+## INSTALLATION :
+
+* ### [Termux] :
+
+```sh
+apt-get update -y
+apt-get upgrade -y
+pkg install nodejs -y
+pkg install git -y
+git clone https://github.com/7ORP3DO/Drishti
+cd $HOME
+ls
+cd Drishti
+ls
+node test.js
+```
+* ### Windows(x64) :
+
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Download NodeJS from [here](https://github.com) <br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Download Drishti from [here](https://github.com)
+ 
+## SCREEN SHOTS [Windows]
+
+<br>
+<p align="center">
+<img width="90%" src="https://i.ibb.co/H4v86KM/tool2.png"/>
+</p>
+
+## WATCH VIDEO [Termux]
+
+[![des]()](#)
