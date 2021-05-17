@@ -14,7 +14,7 @@
 <br>
 
 <p align="center">
-<a href=""><img title="GitHub" src="https://img.shields.io/badge/GitHub-Torpedo-red?style=for-the-badge&logo=github"></a>
+<a href=""><img title="GitHub" src="https://img.shields.io/badge/GitHub-7ORP3DO-red?style=for-the-badge&logo=github"></a>
 </p>
 
 
@@ -26,8 +26,9 @@
 <a href="#"><img title="Forks" src="https://img.shields.io/github/forks/7ORP3DO/Drishti?color=red&style=flat-square"></a>
 <a href="#"><img title="Watching" src="https://img.shields.io/github/watchers/7ORP3DO/Drishti?label=Watchers&color=blue&style=flat-square"></a>
 <a href="#"><img title="Licence" src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
-</p>
+<a href="#"><img title="Profile Views" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/7ORP3DO/Drishti&title=Profile%20Views"></a>
 
+</p>
 
 
 <br>
