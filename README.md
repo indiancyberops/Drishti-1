@@ -14,8 +14,7 @@
 <br>
 
 <p align="center">
-<a href=""><img title="Github" src="https://img.shields.io/badge/GitHub-Torpedo-brightgreen?style=for-the-badge&logo=github"></a>
-<a href=""><img title="YouTube" src="https://img.shields.io/badge/YouTube-Torpedo-red?style=for-the-badge&logo=Youtube"></a>
+<a href=""><img title="GitHub" src="https://img.shields.io/badge/GitHub-Torpedo-red?style=for-the-badge&logo=github"></a>
 </p>
 
 
