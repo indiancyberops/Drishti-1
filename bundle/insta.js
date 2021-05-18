@@ -35,14 +35,14 @@ function is_null(x) {
 
 function qus2() {
 
-    const qus2 = ask('Do You want to show Media Info? '.magenta + '[Y/N] '.yellow);
+    const qus2 = ask('Do You want to show Media Info? '.magenta + '[Y/N] '.yellow).toLowerCase();
 
     if (qus2 == 'y') {
-        console.log('yes');
+        console.log('This Function is currently unavailable');
     } else if (qus2 == 'n') {
-        console.log('no');
+        console.log('Bye!');
     } else {
-        console.log('Invalid Inpud!'.cyan);
+        console.log('Invalid Input!'.cyan);
     }
 }
 

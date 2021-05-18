@@ -5,6 +5,11 @@ const clr = require('colors');
 var current_date = new Date();
 var show_date = dateFormat(current_date, "dd-mm-yyyy");
 var show_time = dateFormat(current_date, "hh:MM:ss TT");
+var version;
+
+require('fs').readFile('./bundle/version', 'utf8', function(err, data) {
+    version = data;
+});
 
 exports.show = (mode,mode2) => {
 
@@ -16,14 +21,14 @@ exports.show = (mode,mode2) => {
       ''  ,;@@@@@'  ;@@@@; ''    ;;@@@@@;;;;
          ;;@@@@@;    '''     .,,;;;@@@@@@@;;;
         ;;@@@@@@;           , ';;;@@@@@@@@;;;.
-         '';@@@@@,.  ,   .   ',;;;@@@@@@;;;;;; ` + 'v1.0.0'+ `
+         '';@@@@@,.  ,   .   ',;;;@@@@@@;;;;;;  v` + version + `
             .   '';;;;;;;;;,;;;;@@@@@;;' ,.:;'
               ''..,,     ''''    '  .,;'
                    ''''''::''''''''       `;
                       
 
     console.log(gradient[mode](banner_logo));
-   console.log(clr.rainbow("                        DRIShTI"));
+   console.log(clr.rainbow("                        DRISHTI"));
 
     console.log(' ');
     console.log('       Time   : [ ' + show_date.magenta.italic + ' | ' + show_time.magenta.italic + ' ]');

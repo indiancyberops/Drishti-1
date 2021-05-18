@@ -7,18 +7,18 @@ loader.show(4000,'cyan',' Checking Dependencies...', 'Dependencies Satisfied');
 
 
 setTimeout(() => {
-  loader.show(3000,'green',' Checking For Update...' , 'Tool is already Updated');
+  loader.update();
 }, 4100);
 
 
 setTimeout(() => {
   loader.show(3000,'yellow',' Running Tests...' , 'Test Completed');
-}, 7300);
+}, 9500);
 
 
 setTimeout(() => {
   loader.show(1000,'red',' Loading...' , 'Loading Completed');
-}, 10500);
+}, 12600);
 
 const banner = require('./bundle/banner');
 
@@ -94,8 +94,8 @@ switch (ans) {
             break;
         
       case '99':
-        console.log('Bye!'.cyan);
-        process.exit();
+        const shell = require('./bundle/shell');
+        shell.update();
         break;
 
       default:
@@ -107,4 +107,4 @@ switch (ans) {
 
 
 
-}, 13000);
+}, 14900);
