@@ -11,7 +11,8 @@ const ask = require('prompt-sync')();
 
 
     console.clear();
-    banner.show('fruit');
+    banner.show('fruit','Instagram Lookup');
+    console.log('');
     const username = banner.ask("Enter Username");
 
 
@@ -47,11 +48,11 @@ function qus2() {
 }
 
  
-console.log('success1');
+
 function SHOW_USER() {
 
 
-    console.log('success2');
+    console.log('\nGetting User\'s Detail... \n');
 
     ig.scrapeUserPage(username).then((result) => {
 
@@ -59,10 +60,10 @@ console.log(result.user);
 
             
 var table = new cTable({
-    chars: { 'top': '═' , 'top-mid': '╤' , 'top-left': '╔' , 'top-right': '╗'
-           , 'bottom': '═' , 'bottom-mid': '╧' , 'bottom-left': '╚' , 'bottom-right': '╝'
-           , 'left': '║' , 'left-mid': '╟' , 'mid': '─' , 'mid-mid': '┼'
-           , 'right': '║' , 'right-mid': '╢' , 'middle': '│' }
+    chars: { 'top': '═'.brightRed , 'top-mid': '╤'.brightRed , 'top-left': '╔'.brightRed , 'top-right': '╗'.brightRed
+           , 'bottom': '═'.brightRed , 'bottom-mid': '╧'.brightRed , 'bottom-left': '╚'.brightRed , 'bottom-right': '╝'.brightRed
+           , 'left': '║'.brightRed , 'left-mid': '╟'.brightRed , 'mid': '─'.brightRed , 'mid-mid': '┼'
+           , 'right': '║'.brightRed , 'right-mid': '╢'.brightRed , 'middle': '│'.brightRed }
   });
   
   table.push(

@@ -9,46 +9,53 @@ clear
 echo " "
 echo " "
 echo "
- ##::::'##:'########::'########:::::'###::::'########:'###>
- ##:::: ##: ##.... ##: ##.... ##:::'## ##:::... ##..:: ##.>
- ##:::: ##: ##:::: ##: ##:::: ##::'##:. ##::::: ##:::: ##:>
- ##:::: ##: ########:: ##:::: ##:'##:::. ##:::: ##:::: ###>
- ##:::: ##: ##.....::: ##:::: ##: #########:::: ##:::: ##.>
- ##:::: ##: ##:::::::: ##:::: ##: ##.... ##:::: ##:::: ##:>
-. #######:: ##:::::::: ########:: ##:::: ##:::: ##:::: ###>
-:.......:::..:::::::::........:::..:::::..:::::..:::::....>
+ ##::::'##:'########::'########:::::'###::::'########:'#######
+ ##:::: ##: ##.... ##: ##.... ##:::'## ##:::... ##..:: ##.....
+ ##:::: ##: ##:::: ##: ##:::: ##::'##:. ##::::: ##:::: ##:::::
+ ##:::: ##: ########:: ##:::: ##:'##:::. ##:::: ##:::: #######
+ ##:::: ##: ##.....::: ##:::: ##: #########:::: ##:::: ##.....
+ ##:::: ##: ##:::::::: ##:::: ##: ##.... ##:::: ##:::: ##:::::
+. #######:: ##:::::::: ########:: ##:::: ##:::: ##:::: #######
+:.......:::..:::::::::........:::..:::::..:::::..:::::........
 
 "|lolcat
 echo " "
 echo " "
-sleep 6.0
+sleep 5.0
 clear
-echo -e "$red                         ChEcKiNg..>$rset"
-sleep 2.0
+echo -e "$red            ▰▱▱▱▱▱▱ ChEcKiNg..$rset"
+sleep 0.5
 clear
-echo -e "$red                         ChEcKiNg...>$rset"
-sleep 2.0
+echo -e "$red            ▰▰▱▱▱▱▱ ChEcKiNg..$rset"
+sleep 0.5
 clear
-echo -e "$red                         ChEcKiNg....>$rset"
-sleep 2.0
+echo -e "$red            ▰▰▰▱▱▱▱ ChEcKiNg..$rset"
+sleep 0.5
 clear
-echo -e "$red                         ChEcKiNg.....>$rset"
-sleep 2.0
+echo -e "$red            ▰▰▰▰▱▱▱ ChEcKiNg..$rset"
+sleep 0.5
+clear
+echo -e "$red            ▰▰▰▰▰▱▱ ChEcKiNg..$rset"
+sleep 0.5
+clear
+echo -e "$red            ▰▰▰▰▰▰▱ ChEcKiNg..$rset"
+sleep 0.5
+clear
+echo -e "$ylo            ▰▰▰▰▰▰▰ ChEcKiNg..$rset"
+sleep 0.5
 clear
 echo " "
 echo " "
-echo -e "$grn                updating the Drishti  please wait$rset"
+echo -e "$grn                Updating the Drishti  please wait.... $ylo"
 sleep 2.0
 cd $HOME
 rm -rf Drishti
 git clone https://github.com/7ORP3DO/Drishti
 clear
 echo " "
-echo -e "$grn               infect has been updated check it now...$rset"
+echo -e "$grn               Drishti has been updated check it now...$rset"
 sleep 3.0
 echo " "
 cd $HOME
-cd Infect
-node main.js
-clear
-sleep 1.0
+cd Drishti
+node test.js

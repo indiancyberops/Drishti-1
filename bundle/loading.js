@@ -39,7 +39,7 @@ exports.update = () => {
   var version = '';
   var version_info = '';
   require('fs').readFile('bundle/version', 'utf8', function (err, data) {
-        version = data + '\n';  });
+        version = data ;  });
 
   const ora = require('ora');
   const spinner = ora('Please Wait').start();
