@@ -3,12 +3,11 @@ exports.update = () => {
     const { exec } = require('child_process');
 
 
-    console.clear();
     console.log("This Process is Automatic.".brightYellow);
     console.log("This Process can take up to 2 minutes".brightCyan);
     console.log("Updating....".brightGreen);
 
-    var scrpt = exec('bash ../update.sh',
+    var scrpt = exec('bash update.sh',
         (error, stdout, stderr) => {
             console.log(stdout);
             console.log(stderr);

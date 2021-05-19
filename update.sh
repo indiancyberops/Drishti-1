@@ -23,30 +23,30 @@ echo " "
 echo " "
 sleep 5.0
 clear
-echo -e "$red            ▰▱▱▱▱▱▱ ChEcKiNg..$rset"
+echo -e "$red  ▰▱▱▱▱▱▱ checking..$rset"
 sleep 0.8
 clear
-echo -e "$red            ▰▰▱▱▱▱▱ ChEcKiNg..$rset"
+echo -e "$red  ▰▰▱▱▱▱▱ checking..$rset"
 sleep 0.8
 clear
-echo -e "$red            ▰▰▰▱▱▱▱ ChEcKiNg..$rset"
+echo -e "$red  ▰▰▰▱▱▱▱ checking..$rset"
 sleep 0.8
 clear
-echo -e "$red            ▰▰▰▰▱▱▱ ChEcKiNg..$rset"
+echo -e "$red  ▰▰▰▰▱▱▱ checking..$rset"
 sleep 0.8
 clear
-echo -e "$red            ▰▰▰▰▰▱▱ ChEcKiNg..$rset"
+echo -e "$ylo  ▰▰▰▰▰▱▱ checking..$rset"
 sleep 0.8
 clear
-echo -e "$red            ▰▰▰▰▰▰▱ ChEcKiNg..$rset"
+echo -e "$ylo  ▰▰▰▰▰▰▱ checking..$rset"
 sleep 0.8
 clear
-echo -e "$ylo            ▰▰▰▰▰▰▰ ChEcKiNg..$rset"
+echo -e "$ylo  ▰▰▰▰▰▰▰ checking..$rset"
 sleep 0.8
 clear
 echo " "
 echo " "
-echo -e "$grn                Updating the Drishti  please wait.... $ylo"
+echo -e "$grn       Updating the Drishti  please wait.... $ylo"
 echo " "
 echo " "
 sleep 2.0
@@ -55,9 +55,10 @@ rm -rf Drishti
 git clone https://github.com/7ORP3DO/Drishti
 clear
 echo " "
-echo -e "$grn               Drishti has been updated check it now...$rset"
+echo -e "$grn      Drishti has been updated check it now...$rset"
 sleep 3.0
 echo " "
 cd $HOME
 cd Drishti
+node main.js
 
