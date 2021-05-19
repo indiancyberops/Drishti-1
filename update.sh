@@ -47,6 +47,8 @@ clear
 echo " "
 echo " "
 echo -e "$grn                Updating the Drishti  please wait.... $ylo"
+echo " "
+echo " "
 sleep 2.0
 cd $HOME
 rm -rf Drishti

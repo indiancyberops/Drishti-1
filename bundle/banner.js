@@ -45,7 +45,7 @@ exports.show = (mode,mode2) => {
 
 
 exports.list = (num,txt)  => {
-   console.log('['.green + num.brightRed.italic + '] '.green + txt.cyan );
+   console.log('['.green + num.brightRed + '] '.green + txt.cyan.italic );
 }
 
 
