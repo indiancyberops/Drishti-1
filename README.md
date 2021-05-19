@@ -85,7 +85,7 @@ cd $HOME
 ls
 cd Drishti
 ls
-node test.js
+node main.js
 ```
 * ### Windows(x64) :
 
