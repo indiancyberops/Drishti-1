@@ -21,8 +21,8 @@ exports.show = (mode) => {
 
 
     const clr = require('colors');
-    const redLine = (clr.brightRed.dim('\n====================================='));
-    const yellowLine = (clr.brightYellow.dim('\n====================================='));
+    const redLine = (clr.brightRed.dim('\n=============================================='));
+    const yellowLine = (clr.brightYellow.dim('\n=============================================='));
 
     function num(x) {
         return x.toString();
@@ -80,11 +80,11 @@ Hosting           : ${bool(data.hosting).green} ${yellowLine}
                 console.log(clr.cyan(ip_data));
 
             } else {
-                console.log(`Unable to Lookup ${data.query} because of ${data.message}.`.brightRed);
+                console.log(`\nUnable to Lookup ${data.query} because of ${data.message}.`.brightRed);
             }
 
         } else {
-            console.log('Something went wrong. Please try again after some time'.red);
+            console.log('\nSomething went wrong. Please try again after some time'.red);
         }
     });
 

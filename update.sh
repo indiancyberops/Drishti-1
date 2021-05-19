@@ -24,25 +24,25 @@ echo " "
 sleep 5.0
 clear
 echo -e "$red            ▰▱▱▱▱▱▱ ChEcKiNg..$rset"
-sleep 0.5
+sleep 0.8
 clear
 echo -e "$red            ▰▰▱▱▱▱▱ ChEcKiNg..$rset"
-sleep 0.5
+sleep 0.8
 clear
 echo -e "$red            ▰▰▰▱▱▱▱ ChEcKiNg..$rset"
-sleep 0.5
+sleep 0.8
 clear
 echo -e "$red            ▰▰▰▰▱▱▱ ChEcKiNg..$rset"
-sleep 0.5
+sleep 0.8
 clear
 echo -e "$red            ▰▰▰▰▰▱▱ ChEcKiNg..$rset"
-sleep 0.5
+sleep 0.8
 clear
 echo -e "$red            ▰▰▰▰▰▰▱ ChEcKiNg..$rset"
-sleep 0.5
+sleep 0.8
 clear
 echo -e "$ylo            ▰▰▰▰▰▰▰ ChEcKiNg..$rset"
-sleep 0.5
+sleep 0.8
 clear
 echo " "
 echo " "
@@ -58,4 +58,4 @@ sleep 3.0
 echo " "
 cd $HOME
 cd Drishti
-node test.js
+

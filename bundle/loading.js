@@ -71,7 +71,7 @@ exports.update = () => {
 
   setTimeout(() => {
     spinner.color = 'green';
-    spinner.text = 'Checking For Update...';
+    spinner.text = ' Checking For Update...';
     spinner.spinner = {
       interval: 500,
       frames: [

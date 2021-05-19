@@ -25,6 +25,8 @@ const banner = require('./bundle/banner');
 
 setTimeout(() => {
 
+  require('./bundle/home').show();
+  /*
   const ask = require('prompt-sync')();  
     
 console.clear();
@@ -35,7 +37,8 @@ banner.list('1','Instagram Lookup');
 banner.list('2','IP Lookup');
 banner.list('3','My IP Info');
 banner.list('4','Address Lookup');
-banner.list('6','Expand Url');
+banner.list('5','Url Shortner');
+banner.list('6','Url Expander');
 banner.list('7','Decrypt Hash');
 banner.list('8','Host Search');
 banner.list('9','Google Search');
@@ -43,6 +46,7 @@ banner.list('10','Traceroute');
 banner.list('11','DNS Lookup');
 banner.list('12','My Device Info');
 banner.list('13','Port Scan');
+banner.list('14','HTTP Header Detector');
 console.log('');
 banner.list('99','Update Tool');
 banner.list('00','Exit');
@@ -64,10 +68,10 @@ switch (ans) {
         day = "Thursday";
         break;
       case '5':
-        day = "Friday";
+        require('./bundle/url').short();
         break;
       case '6':
-        day = "Saturday";
+        require('./bundle/url').expand();
         break;
       case '7':
         day = "Saturday";
@@ -78,16 +82,28 @@ switch (ans) {
       case '9':
         day = "Saturday";
         break;
-      case '7':
+      case '10':
         day = "Saturday";
         break;
-      case '8':
+      case '11':
         day = "Saturday";
         break;
-      case '9':
+      case '12':
         day = "Saturday";
         break;
-
+      case '13':
+        require('./bundle/web').port();
+        break;
+      case '14':
+        require('./bundle/web').head();
+        break;      
+      case '15':
+        day = "Saturday";
+        break;
+      case '16':
+        day = "Saturday";
+        break;
+      
       case '00':
             console.log('Bye!'.cyan);
             process.exit();
@@ -102,9 +118,9 @@ switch (ans) {
             console.log("Invalid Option!" .brightRed);
             console.log('Bye!'.cyan);
             break;
-}
+  }
 
 
-
+*/
 
 }, 14900);
