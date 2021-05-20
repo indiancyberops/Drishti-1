@@ -60,7 +60,9 @@ exports.show = (mode,mode2) => {
           day = "Saturday";
           break;
         case '10':
+
           require('./web').trace();
+          
           break;
         case '11':
           require('./web').dns();
@@ -96,5 +98,7 @@ exports.show = (mode,mode2) => {
               setTimeout(() => { require('../bundle/home').show() }, 1000);
               break;
       }
+
+
     }
     

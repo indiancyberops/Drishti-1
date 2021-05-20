@@ -86,11 +86,11 @@ exports.update = () => {
   setTimeout(() => {
 
     if (version_info == "success") {
-      spinner.succeed("Tool is already Updated")
+      spinner.succeed(" Tool is already Updated")
     } else if (version_info == "warn") {
-      spinner.warn('Unable to get Version Info')
+      spinner.warn(' Unable to get Version Info')
     } else if (version_info == 'info') {
-      spinner.info("A new version of tool Found")
+      spinner.info(" A new version of tool Found")
     } else {
       spinner.warn('Unable to get Version Info')
     }

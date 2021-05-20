@@ -1,5 +1,9 @@
 exports.update = () => {
-    require('colors');
+   const clr = require('colors');
+
+   console.log("\nWe are working on this functon, so for now you can upadate this tool with ".brightRed.italic  + "'bash update.sh'".brightGreen + " command.".brightRed.italic );
+
+   /*
     const { exec } = require('child_process');
 
 
@@ -21,5 +25,5 @@ exports.update = () => {
             }, 2000);
         });
 
-
+*/
 }

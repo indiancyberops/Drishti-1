@@ -1,28 +1,21 @@
 exports.show = (mode) => {
 
-
     const banner = require('./banner');
     console.clear();
-    banner.show('retro', 'IP Lookup');
-
-
-
-
+    banner.show('pastel', 'IP Lookup');
 
 
     const ask = require('prompt-sync')();
     if (mode) {
         var search_ip = '';
     } else {
-       var search_ip = banner.ask("Enter Victem IP");
+        var search_ip = banner.ask("Enter Victem IP");
     }
 
 
-
-
     const clr = require('colors');
-    const redLine = (clr.brightRed.dim('\n=============================================='));
-    const yellowLine = (clr.brightYellow.dim('\n=============================================='));
+    const redLine = (clr.brightRed.dim('\n==================================================='));
+    const yellowLine = (clr.brightYellow.dim('\n==================================================='));
 
     function num(x) {
         return x.toString();
@@ -36,9 +29,6 @@ exports.show = (mode) => {
         }
     }
 
-
-
-
     const request = require('request');
 
     options = {
@@ -46,6 +36,7 @@ exports.show = (mode) => {
         "url": `http://ip-api.com/json/${search_ip}?fields=status,message,continent,country,regionName,city,district,zip,lat,lon,timezone,offset,currency,isp,org,as,asname,reverse,mobile,proxy,hosting,query`
     }
 
+    console.log('\nGettin IP info...\n');
     request(options, function (error, response) {
 
 
@@ -79,6 +70,7 @@ Hosting           : ${bool(data.hosting).green} ${yellowLine}
 
                 console.log(clr.cyan(ip_data));
 
+
             } else {
                 console.log(`\nUnable to Lookup ${data.query} because of ${data.message}.`.brightRed);
             }
@@ -86,9 +78,8 @@ Hosting           : ${bool(data.hosting).green} ${yellowLine}
         } else {
             console.log('\nSomething went wrong. Please try again after some time'.red);
         }
+        require('./back').back();
+
     });
-
-
-
 
 }

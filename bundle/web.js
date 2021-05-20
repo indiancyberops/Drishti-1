@@ -4,7 +4,7 @@ exports.head = () => {
 
     const banner = require('./banner');
     console.clear();
-    banner.show('retro', 'HTTP Headers Detector');
+    banner.show('morning', 'HTTP Headers Detector');
 
     var website;
     website = banner.ask("Enter the Website");
@@ -47,6 +47,7 @@ exports.head = () => {
             console.log(clr.brightRed("Something Went Wrong!\n"));
         }
 
+        require('./back').back();
 
     });
 
@@ -62,7 +63,7 @@ exports.port = () => {
 
     const banner = require('./banner');
     console.clear();
-    banner.show('retro', 'Port Scanner');
+    banner.show('passion', 'Port Scanner');
 
     var website;
     website = banner.ask("Enter the Website");
@@ -89,7 +90,8 @@ exports.port = () => {
         } else {
             console.log(clr.brightRed("Something Went Wrong!\n"));
         }
-
+        
+        require('./back').back();
 
     });
 
@@ -104,7 +106,7 @@ exports.trace = () => {
 
     const banner = require('./banner');
     console.clear();
-    banner.show('retro', 'Traceroute');
+    banner.show('atlas', 'Traceroute');
 
     const website = banner.ask("Enter the Website");
 
@@ -132,7 +134,8 @@ exports.trace = () => {
         } else {
             console.log(clr.brightRed("Something Went Wrong!\n"));
         }
-
+        
+        require('./back').back();
 
     });
 
@@ -192,7 +195,8 @@ exports.dns = () => {
         } else {
             console.log(clr.brightRed("Something Went Wrong!\n"));
         }
-
+        
+        require('./back').back();
 
     });
 
@@ -212,7 +216,7 @@ exports.host = () => {
 
     const banner = require('./banner');
     console.clear();
-    banner.show('retro', 'Host Search');
+    banner.show('rainbow', 'Host Search');
 
     const website = banner.ask("Enter the Website");
 
@@ -224,10 +228,11 @@ exports.host = () => {
         "url": `https://api.hackertarget.com/hostsearch/?q=${website}`
     }
 
+ 
+    console.log('');
     console.log("\nGetting Host Info...\n");
 
     request(options, function (error, response) {
-
 
         if (!error && response.statusCode == 200) {
 
@@ -241,7 +246,8 @@ exports.host = () => {
             console.log(clr.brightRed("Something Went Wrong!\n"));
         }
 
-
+        
+        require('./back').back();
     });
 
 

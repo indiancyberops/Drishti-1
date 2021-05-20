@@ -11,7 +11,10 @@ require('fs').readFile('./bundle/version', 'utf8', function(err, data) {
     version = data;
 });
 
-exports.show = (mode,mode2) => {
+
+exports.show = (mode,mode2,mode3) => {
+
+   if (mode3) { version = '0.0.0' }
 
     banner_logo = `   
         ..,,;;;;;;,,,,
@@ -28,7 +31,7 @@ exports.show = (mode,mode2) => {
                       
 
     console.log(gradient[mode](banner_logo));
-   console.log(clr.rainbow("                        DRISHTI"));
+   console.log(clr.rainbow("                    D R I S H T I"));
 
     console.log(' ');
     console.log('       Time   : [ ' + show_date.magenta.italic + ' | ' + show_time.magenta.italic + ' ]');
@@ -45,7 +48,7 @@ exports.show = (mode,mode2) => {
 
 
 exports.list = (num,txt)  => {
-   console.log('['.green + num.brightRed + '] '.green + txt.cyan.italic );
+   console.log('['.green + num.brightRed + '] '.green + txt.blue.italic );
 }
 
 

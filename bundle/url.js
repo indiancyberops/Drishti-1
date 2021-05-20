@@ -2,7 +2,7 @@ exports.expand = () => {
 
     const banner = require('./banner');
     console.clear();
-    banner.show('retro', 'URL Expender');
+    banner.show('atlas', 'URL Expender');
     const clr = require('colors');
 
 
@@ -12,7 +12,15 @@ exports.expand = () => {
     var url = banner.ask("Enter Your Short Url");
 
     longUrl.expand(url, function (err, longUrl) {
-        console.log('\nYour Expended Url:  '.cyan + longUrl.brightGreen);
+
+        if (err) {
+            console.log(clr.red(err));
+            require('./back').back();
+        } else {
+            console.log('\nYour Expended Url:  '.cyan + longUrl.brightGreen);
+            require('./back').back();
+        }
+        
     });
 
 
@@ -24,7 +32,7 @@ exports.short = () => {
 
     const banner = require('./banner');
     console.clear();
-    banner.show('retro', 'URL Shortner');
+    banner.show('pastel', 'URL Shortner');
     const clr = require('colors');
     const ask = require('prompt-sync')();
 
@@ -33,7 +41,15 @@ exports.short = () => {
     const shortUrl = require('node-url-shortener');
 
     shortUrl.short(url, function (err,shortUrl) {
-        console.log('\nYour Short Url:  '.cyan + shortUrl.brightGreen);
+       
+        if (err) {
+             console.log('Something went wrong!'.red);
+             require('./back').back();
+        } else {
+            console.log('\nYour Short Url:  '.cyan + shortUrl.brightGreen);
+            require('./back').back();
+        }
+        
     });
 
 }
