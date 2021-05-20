@@ -36,7 +36,7 @@ exports.show = (mode,mode2,mode3) => {
     console.log(' ');
     console.log('       Time   : [ ' + show_date.magenta.italic + ' | ' + show_time.magenta.italic + ' ]');
     console.log('       Team   : [ ' + 'Indian Cyber Ops'.yellow.italic + ' ]');
-    console.log('       Author : [ ' + 'Prateek'.brightGreen.italic + ' | ' + 'Samavai'.magenta.italic + ' | ' + 'Biswajeet'.brightRed.italic    + ' ]' );
+    console.log('       Author : [ ' + 'Prateek'.brightGreen.italic + ' | ' + 'Samanvai'.magenta.italic + ' | ' + 'Biswajeet'.brightRed.italic    + ' ]' );
     
     if (mode2) {
     console.log('       Tool   : [ ' + mode2.brightCyan + ' ]' );
