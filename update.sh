@@ -46,7 +46,7 @@ sleep 0.8
 clear
 echo " "
 echo " "
-echo -e "$grn       Updating the Drishti  please wait.... $ylo"
+echo -e "$grn       Updating the Drishti please wait.... $ylo"
 echo " "
 echo " "
 sleep 2.0
