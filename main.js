@@ -16,13 +16,13 @@ setTimeout(() => {
 
 
 setTimeout(() => {
-  loader.show(3000, 'yellow', ' Running Tests...', 'Test Completed');
+  loader.show(1500, 'yellow', ' Running Tests...', 'Test Completed');
 }, 7500);
 
 
 setTimeout(() => {
   loader.show(1000, 'red', ' Loading...', 'Loading Completed');
-}, 10600);
+}, 9100);
 
 const banner = require('./bundle/banner');
 
@@ -31,4 +31,4 @@ setTimeout(() => {
 
   require('./bundle/home').show();
 
-}, 12900);
+}, 11200);

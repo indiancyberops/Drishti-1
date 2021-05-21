@@ -39,7 +39,7 @@ exports.show = (mode,mode2,mode3) => {
     console.log('       Author : [ ' + 'Prateek'.brightGreen.italic + ' | ' + 'Samanvai'.yellow.italic + ' | ' + 'Biswajeet'.brightRed.italic    + ' ]' );
     
     if (mode2) {
-    console.log('       Tool   : [ ' + mode2.brightCyan + ' ]' );
+    console.log('       Tool   : [ ' + mode2.brightCyan.bold + ' ]' );
     console.log(' ');
     
     }
