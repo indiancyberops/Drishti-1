@@ -16,9 +16,9 @@ exports.show = (mode,mode2) => {
   banner.list('4','Address Lookup');
   banner.list('5','Url Shortner');
   banner.list('6','Url Expander');
-  banner.list('7','Decrypt Hash');
+  banner.list('7','Encryption');
   banner.list('8','Host Search');
-  banner.list('9','Google Search');
+  banner.list('9','Reverse Ip Lookup');
   banner.list('10','Traceroute');
   banner.list('11','DNS Lookup');
   banner.list('12','My Device Info');
@@ -51,24 +51,22 @@ exports.show = (mode,mode2) => {
           require('./url').expand();
           break;
         case '7':
-          day = "Saturday";
+          require('./hash').show();
           break;
         case '8':
           require('./web').host();
           break;
         case '9':
-          day = "Saturday";
+          require('./web').rev();
           break;
         case '10':
-
           require('./web').trace();
-          
           break;
         case '11':
           require('./web').dns();
           break;
         case '12':
-          day = "Saturday";
+          require('./info').show()
           break;
         case '13':
           require('./web').port();

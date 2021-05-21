@@ -38,7 +38,7 @@ exports.head = () => {
 
             for (let i = 1; i < ary.length; i = i + 2) {
 
-                if (ary[i+1]) {
+                if (ary[i + 1]) {
                     console.log(ary[i].cyan + ' : '.brightYellow + ary[i + 1].brightGreen);
                 }
             }
@@ -90,7 +90,7 @@ exports.port = () => {
         } else {
             console.log(clr.brightRed("Something Went Wrong!\n"));
         }
-        
+
         require('./back').back();
 
     });
@@ -134,7 +134,7 @@ exports.trace = () => {
         } else {
             console.log(clr.brightRed("Something Went Wrong!\n"));
         }
-        
+
         require('./back').back();
 
     });
@@ -182,12 +182,12 @@ exports.dns = () => {
             var ary = str.split(" : ")
 
 
-            
-            
+
+
 
             for (let i = 0; i < ary.length; i = i + 2) {
 
-                if (ary[i+1]) {
+                if (ary[i + 1]) {
                     console.log(ary[i].cyan + ' : '.brightYellow + ary[i + 1].brightGreen);
                 }
             }
@@ -195,7 +195,7 @@ exports.dns = () => {
         } else {
             console.log(clr.brightRed("Something Went Wrong!\n"));
         }
-        
+
         require('./back').back();
 
     });
@@ -228,7 +228,7 @@ exports.host = () => {
         "url": `https://api.hackertarget.com/hostsearch/?q=${website}`
     }
 
- 
+
     console.log('');
     console.log("\nGetting Host Info...\n");
 
@@ -246,10 +246,60 @@ exports.host = () => {
             console.log(clr.brightRed("Something Went Wrong!\n"));
         }
 
-        
+
         require('./back').back();
     });
 
 
 }
 
+
+
+
+
+
+
+
+
+exports.rev = () => {
+
+
+    const banner = require('./banner');
+    console.clear();
+    banner.show('retro', ' Reverse DNS lookup');
+
+    const website = banner.ask("Enter a Website or IP");
+
+    const clr = require('colors');
+    const request = require('request');
+
+    options = {
+        "method": "GET",
+        "url": `https://api.hackertarget.com/reverseiplookup/?q=${website}`
+    }
+
+
+    console.log('');
+    console.log("\nGetting DNS Info...\n");
+
+    request(options, function (error, response) {
+
+        if (!error && response.statusCode == 200) {
+
+            var str = response.body;
+            var ary = str.split("\n");
+
+            for (let i = 0; i < ary.length; i++) {
+                console.log(`[`.blue + clr.brightYellow(i) + `] `.blue + ary[i].brightGreen);
+            }
+
+        } else {
+            console.log(clr.brightRed("Something Went Wrong!\n"));
+        }
+
+
+        require('./back').back();
+    });
+
+
+}
