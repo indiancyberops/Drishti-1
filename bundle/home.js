@@ -13,17 +13,16 @@ exports.show = (mode,mode2) => {
   banner.list('1','Instagram Lookup');
   banner.list('2','IP Lookup');
   banner.list('3','My IP Info');
-  banner.list('4','Address Lookup');
-  banner.list('5','Url Shortner');
-  banner.list('6','Url Expender');
-  banner.list('7','Encryption');
-  banner.list('8','Host Search');
-  banner.list('9','Reverse Ip Lookup');
-  banner.list('10','Traceroute');
-  banner.list('11','DNS Lookup');
-  banner.list('12','My Device Info');
-  banner.list('13','Port Scan');
-  banner.list('14','HTTP Header Detector');
+  banner.list('4','Url Shortner');
+  banner.list('5','Url Expender');
+  banner.list('6','Encryption');
+  banner.list('7','Host Search');
+  banner.list('8','Reverse Ip Lookup');
+  banner.list('9','Traceroute');
+  banner.list('10','DNS Lookup');
+  banner.list('11','My Device Info');
+  banner.list('12','Port Scan');
+  banner.list('13','HTTP Header Detector');
   console.log('');
   banner.list('99','Update Tool');
   banner.list('00','Exit');
@@ -42,44 +41,36 @@ exports.show = (mode,mode2) => {
           require('./iplookup').show('myip');
           break;
         case '4':
-          day = "Thursday";
-          break;
-        case '5':
           require('./url').short();
           break;
-        case '6':
+        case '5':
           require('./url').expand();
           break;
-        case '7':
+        case '6':
           require('./hash').show();
           break;
-        case '8':
+        case '7':
           require('./web').host();
           break;
-        case '9':
+        case '8':
           require('./web').rev();
           break;
-        case '10':
+        case '9':
           require('./web').trace();
           break;
-        case '11':
+        case '10':
           require('./web').dns();
           break;
-        case '12':
+        case '11':
           require('./info').show()
           break;
-        case '13':
+        case '12':
           require('./web').port();
           break;
-        case '14':
+        case '13':
           require('./web').head();
           break;      
-        case '15':
-          day = "Saturday";
-          break;
-        case '16':
-          day = "Saturday";
-          break;
+
         
         case '00':
               console.log('Bye!'.cyan);
