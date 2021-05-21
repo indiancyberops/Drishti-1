@@ -7,6 +7,7 @@ exports.show = () => {
     const clr = require('colors');
     const ask = require('prompt-sync')();
     const request = require('request');
+    const fs = require('fs');
 
 
 
@@ -69,7 +70,7 @@ exports.show = () => {
             });
 
             table.push(
-                [`Username`, username],
+                [`Username`.yellow, username],
                 [`Full Name`.yellow, is_null(result.user.full_name)],
                 [`Biography`.yellow, is_null(result.user.biography)],
                 [`Followers`.yellow, is_null(result.user.edge_followed_by.count)],
@@ -101,11 +102,11 @@ exports.show = () => {
 
             const dp_url = result.user.profile_pic_url_hd;
 
-            var dp = ask('Do You want to Download Profile Pic? '.magenta + '[Y/N] '.yellow).toLowerCase();
+            var dp = ask('Do You want to Download Profile Picture (HD)? '.magenta + '[Y/N] '.yellow).toLowerCase();
 
             if (dp.toLowerCase() == 'y') {
-                request(dp_url).pipe(fs.createWriteStream('doodle.png'));
-                console.log('Image Saved!');
+                request(dp_url).pipe(fs.createWriteStream(`./images/${username}.png`));
+                console.log(`\nImage Saved to /images/${username}.png`);
             }
 
             setTimeout(() => {
