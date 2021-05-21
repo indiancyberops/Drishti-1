@@ -116,7 +116,10 @@ exports.show = () => {
         }).catch((err) => {
             //console.log(err);
 
-            console.log('\nSomething went wrong! Please check your username and try again after some time!'.brightRed);
+            console.log('\nSomething went wrong! Please check your username and try again after some time!'.brightRed.italic);
+            setTimeout(() => {
+                require('./back').back();
+            }, 100);
         });
 
     }
