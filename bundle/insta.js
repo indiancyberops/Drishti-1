@@ -6,7 +6,7 @@ exports.show = () => {
     const cTable = require('cli-table');
     const clr = require('colors');
     const ask = require('prompt-sync')();
-
+    const request = require('request');
 
 
 
@@ -56,7 +56,7 @@ exports.show = () => {
 
         ig.scrapeUserPage(username).then((result) => {
 
-            console.log(result.user);
+            //console.log(result.user);
 
 
             var table = new cTable({
@@ -98,6 +98,15 @@ exports.show = () => {
             );
 
             console.log(clr.green(table.toString()));
+
+            const dp_url = result.user.profile_pic_url_hd;
+
+            var dp = ask('Do You want to Download Profile Pic? '.magenta + '[Y/N] '.yellow).toLowerCase();
+
+            if (dp.toLowerCase() == 'y') {
+                request(dp_url).pipe(fs.createWriteStream('doodle.png'));
+                console.log('Image Saved!');
+            }
 
             setTimeout(() => {
                 require('./back').back();
