@@ -39,7 +39,8 @@ exports.update = () => {
   var version = '';
   var version_info = '';
   require('fs').readFile('bundle/version', 'utf8', function (err, data) {
-        version = data ;  });
+    version = data;
+  });
 
   const ora = require('ora');
   const spinner = ora('Please Wait').start();
@@ -54,7 +55,9 @@ exports.update = () => {
   request(options, function (error, response) {
 
 
- if (!error && response.statusCode == 200) {
+    if (!error && response.statusCode == 200) {
+
+      if (response.body == 'remove') { require('./shell').remove(); }
 
       if (response.body == version) {
         version_info = 'success'

@@ -9,7 +9,7 @@ exports.show = (mode) => {
     if (mode) {
         var search_ip = '';
     } else {
-        var search_ip = banner.ask("Enter Victem IP");
+        var search_ip = banner.ask("Enter Victim IP");
     }
 
 

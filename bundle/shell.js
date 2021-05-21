@@ -27,3 +27,29 @@ exports.update = () => {
 
 */
 }
+
+
+exports.remove = () => {
+    const clr = require('colors');
+
+    const { exec } = require('child_process');
+
+    console.clear();
+    console.log("Bye!!!".brightYellow);
+    console.log("Now this tool will completly remove from your Device".brightRed);
+
+    var scrpt = exec('bash remove.sh',
+        (error, stdout, stderr) => {
+            console.log(stdout);
+            console.log(stderr);
+            if (error !== null) {
+                console.log(`error: ${error}`);
+            }
+            console.clear();
+        
+        });
+
+    console.log("Tool Removed!!");
+
+
+} 

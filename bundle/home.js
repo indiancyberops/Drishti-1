@@ -15,7 +15,7 @@ exports.show = (mode,mode2) => {
   banner.list('3','My IP Info');
   banner.list('4','Address Lookup');
   banner.list('5','Url Shortner');
-  banner.list('6','Url Expander');
+  banner.list('6','Url Expender');
   banner.list('7','Encryption');
   banner.list('8','Host Search');
   banner.list('9','Reverse Ip Lookup');

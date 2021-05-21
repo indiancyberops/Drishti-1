@@ -2,7 +2,7 @@ exports.expand = () => {
 
     const banner = require('./banner');
     console.clear();
-    banner.show('atlas', 'URL Expender');
+    banner.show('atlas', 'URL Expander');
     const clr = require('colors');
 
 
