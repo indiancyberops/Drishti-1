@@ -116,7 +116,7 @@ exports.show = () => {
         }).catch((err) => {
             //console.log(err);
 
-            console.log('\nSomething went wrong! Please check your username and try again after some time!');
+            console.log('\nSomething went wrong! Please check your username and try again after some time!'.brightRed);
         });
 
     }
