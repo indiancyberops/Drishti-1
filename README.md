@@ -91,7 +91,7 @@ node main.js
 * ### Windows(x64) :
 
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Download NodeJS from [here](https://github.com) <br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Download NodeJS from [here](https://nodejs.org/en/download/) <br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Download Drishti from [here](https://github.com)
  
 
