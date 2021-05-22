@@ -93,6 +93,49 @@ node main.js
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Download NodeJS from [here](https://github.com) <br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Download Drishti from [here](https://github.com)
  
+
+
+
+## preview
+
+```
+                 ..,,;;;;;;,,,,
+           .,;'';;,..,;;;,,,,,.''';;,..
+        ,,''                    '';;;;,;''
+       ;'    ,;@@;'  ,@@;, @@, ';;;@@;,;';.
+      ''  ,;@@@@@'  ;@@@@; ''    ;;@@@@@;;;;
+         ;;@@@@@;    '''     .,,;;;@@@@@@@;;;
+        ;;@@@@@@;           , ';;;@@@@@@@@;;;.
+         '';@@@@@,.  ,   .   ',;;;@@@@@@;;;;;;  v1.0.6
+            .   '';;;;;;;;;,;;;;@@@@@;;' ,.:;'
+              ''..,,     ''''    '  .,;'
+                   ''''''::''''''''
+                    D R I S H T I
+
+       Time   : [ 22-05-2021 | 07:25:46 AM ]
+       Team   : [ Indian Cyber Ops ]
+       Author : [ Prateek | Samanvai | Biswajeet ]
+
+[1] Instagram Lookup
+[2] IP Lookup
+[3] My IP Info
+[4] Url Shortner
+[5] Url Expender
+[6] Encryption
+[7] Host Search
+[8] Reverse Ip Lookup
+[9] Traceroute
+[10] DNS Lookup
+[11] My Device Info
+[12] Port Scan
+[13] HTTP Header Detector
+
+[99] Update Tool
+[00] Exit
+
+Select Your Option :
+```
+
 ## SCREEN SHOTS [Windows]
 
 <br>
