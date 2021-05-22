@@ -17,7 +17,7 @@
 <br>
 
 <p align="center">
-<a href=""><img title="GitHub" src="https://img.shields.io/badge/GitHub-7ORP3DO-red?style=for-the-badge&logo=github"></a>
+<a href=""><img title="GitHub" src="https://img.shields.io/badge/GitHub-Indian Cyber Ops-red?style=for-the-badge&logo=github"></a>
 </p>
 
 
@@ -63,12 +63,13 @@ Drishti is an information collection tool (OSINT) which aims to carry out Basic 
 * [+] Unlimited usage !
 * [+] Updated maintainence !
 * [+] Easy for Beginners !
-* [+] Instagram Lookup
-* [+] IP Lookup
-* [+] DNS Lookup
-* [+] Port Scan
-* [+] Address Lookup
-* [+] Decrypt Hash
+* [+] Instagram Lookup !
+* [+] InstaGram DP Download !
+* [+] IP Lookup !
+* [+] DNS Lookup !
+* [+] Port Scan !
+* [+] Address Lookup !
+* [+] Decrypt Hash !
 
 
 ## INSTALLATION :
@@ -142,10 +143,20 @@ Select Your Option :
 <p align="center">
 <img width="90%" src="https://i.ibb.co/H4v86KM/tool2.png"/>
 </p>
-
+<!--
 ## WATCH VIDEO [Termux]
-
 [![des]()](#)
+-->
+
+
+
+## CONNECT WITH US :
+
+<a href="#"><img title="Github" src="https://img.shields.io/badge/Github-Indian Cyber Ops-brightgreen?style=for-the-badge&logo=github"></a>
+[![Instagram](https://img.shields.io/badge/INSTAGRAM-FOLLOW-red?style=for-the-badge&logo=instagram)](https://instagram.com/indian_cyber_ops)
+[![Facwbook](https://img.shields.io/badge/FACEBOOK-LIKE-red?style=for-the-badge&logo=facebook)](https://www.facebook.com/indiancyberops)
+[![Twitter](https://img.shields.io/badge/TELEGRAM-CHANNEL-red?style=for-the-badge&logo=twitter)](https://twitter.com/indiancyberops?s=20)
+<a href="https://rebrand.ly/noobhackers"><img title="YouTube" src="https://img.shields.io/badge/YouTube-Indian Cyber Ops-red?style=for-the-badge&logo=Youtube"></a>
 
 ## WARNING : 
 ***This tool is only for educational purpose. If you use this tool for other purposes except education we will not be responsible in such cases.***
