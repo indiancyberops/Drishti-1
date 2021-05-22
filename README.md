@@ -70,6 +70,11 @@ Drishti is an information collection tool (OSINT) which aims to carry out Basic 
 * [+] Port Scan !
 * [+] Address Lookup !
 * [+] Decrypt Hash !
+* [+] Url Shortner !
+* [+] Url Expander !
+* [+] HTTP Header Detector !
+* [+] Reverse Ip Lookup !
+
 
 
 ## INSTALLATION :
@@ -143,8 +148,8 @@ Select Your Option :
 ## SCREEN SHOTS [Windows]
 
 <br>
-<p align="center">
-<img width="80%" src="https://i.ibb.co/H4v86KM/tool2.png"/>
+<p align="center" >
+<img width="90%" src="https://i.ibb.co/H4v86KM/tool2.png"/>
 </p>
 <!--
 ## WATCH VIDEO [Termux]
